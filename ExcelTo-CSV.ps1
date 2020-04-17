@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    ExceltoCSV.ps1 - convert Excel file to CSV or TXT format
+    ExcelTo-CSV.ps1 - convert Excel file to CSV or TXT format
 
 .DESCRIPTION
     Script for converting an Excel workbook to CSV or TXT file(s).
