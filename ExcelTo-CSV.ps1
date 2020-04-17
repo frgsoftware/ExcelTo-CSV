@@ -6,12 +6,12 @@
     Script for converting an Excel workbook to CSV or TXT file(s).
 
 .NOTES
-    File Name:  ExceltoCSV.ps1
+    File Name:  ExcelTo-CSV.ps1
     Author:     Marcus Libäck <marcus.liback@gmail.com>
     Requires:   PowerShell v4
 
 .EXAMPLE
-    ExceltoCSV.ps1 -Sheet "SheetName" SheetIndex <sheet number> -InFile Foo.xlsx -ExportFile Foo.pdf
+    ExcelTo-CSV.ps1 -Sheet "SheetName" SheetIndex <sheet number> -InFile Foo.xlsx -ExportFile Foo.pdf
 #>
 
 # Command line parameters
