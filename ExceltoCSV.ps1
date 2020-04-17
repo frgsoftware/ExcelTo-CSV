@@ -119,8 +119,8 @@ function SafeFileName ([string] $name) {
 # Set parameters & settings
 # -----------------------------------------------------------------------------
 # Set up path and filename for the exported PDF file
-if ($_InPath) {$_InPath    = Split-Path $InFile -Parent}
-if ($_InFile) {$_InFile    = Split-Path $InFile -Leaf}
+if ($InFile) {$_InPath    = Split-Path $InFile -Parent}
+if ($InFile) {$_InFile    = Split-Path $InFile -Leaf}
 
 # Set up path and filename for the exported PDF file
 if ($ExportFile) {
