@@ -57,7 +57,7 @@ Param (
         Mandatory=$false,
         HelpMessage = "Use local list separator (';' intead of ',') for CSV instead of default (optional)"
     )]
-    [switch] $UseCulture    
+    [switch] $UseCulture
 )
 
 # -----------------------------------------------------------------------------
@@ -80,13 +80,13 @@ function CleanupExcelInstance
     if ($worksheet) {
         while( [System.Runtime.Interopservices.Marshal]::ReleaseComObject($worksheet)){}
     }
-    
+
     if ($workbook) {
         $workbook.Close()
         while( [System.Runtime.Interopservices.Marshal]::ReleaseComObject($workbook)){}
         while( [void][System.Runtime.Interopservices.Marshal]::FinalReleaseComObject($workbook)){}
     }
-    
+
     if ($excel) {
         $excel.Quit()
         while( [System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel)){}
